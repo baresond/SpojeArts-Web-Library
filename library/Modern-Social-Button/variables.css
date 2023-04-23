@@ -1,0 +1,70 @@
+* {
+    --facebook-color: #1877f2;
+    --facebook-color-origin: #3b5999;
+
+    --twitter-color: #1da1f2;
+    --twitter-color-origin: #46c1f6;
+
+    --instagram-color: #c32aa3;
+    --instagram-color-origin: #e1306c;
+
+    --github-color: #333;
+    --github-color-origin: #333;
+
+    --youtube-color: #ff0000;
+    --youtube-color-origin: #de463b;
+
+    --linkedin-color: #0a66c2;
+
+    --tiktok-color: #010101;
+
+    --google-color: #4285f4;
+
+    --pinterest-color: #bd081c;
+
+    --snapchat-color: #fffc00;
+
+    --whatsapp-color: #25d366;
+
+    --tumblr-color: #35465d;
+
+    --reddit-color: #ff4500;
+
+    --twitch-color: #9146ff;
+
+    --discord-color: #5865f2;
+
+    --yelp-color: #d32323;
+
+    --mastodon-color: #6364ff;
+
+    --spotify-color: #1ed760;
+
+    --apple-color: #a6b1b7;
+
+    --amazon-color: #ff9900;
+
+
+    --microsoft-color-red: #f35022;
+    --microsoft-color-green: #80bb03;
+    --microsoft-color-blue: #03a5f0;
+    --microsoft-color-yellow: #ffb903;
+
+    --microsoft-color-experimental: ; /* Logo */
+    --microsoft-color-origin: linear-gradient(var(--microsoft-color-red), var(--microsoft-color-yellow));
+    --microsoft-color-before: linear-gradient(to bottom right, transparent, var(--microsoft-color-yellow));
+
+    --periscope-color: #40a4c4;
+
+    --foursquare-color: #f94877;
+
+    --vimeo-color: #1ab7ea;
+    
+    --skype-color: #00aff0;
+
+    --android-color: #a4c639;
+
+    --steam-color: #171A21;
+
+    --telegram-color: #0088cc;
+}

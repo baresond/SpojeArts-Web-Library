@@ -1,0 +1,253 @@
+@import url('variables.css');
+
+.social-icon {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+    transition: all .5s cubic-bezier(.68, -.55, .265, 1.55);
+}
+
+.social-icon a {
+    color: #333;
+    border-radius: 50%;
+}
+
+.social-icon:hover a {
+    color: #fff;
+}
+
+.social-icon span {
+    position: relative;
+    height: 60px;
+    width: 60px;
+    display: block;
+    background: #fff;
+    text-align: center;
+    border-radius: 50%;
+    z-index: 2;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.social-icon span i {
+    font-size: 25px;
+    line-height: 60px;
+}
+
+.social-icon:hover span {
+    color: #fff;
+}
+
+.social-icon .tooltip {
+    position: absolute;
+    top: 0px;
+    background: #fff;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 18px;
+    border-radius: 25px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+
+    transition: all .5s cubic-bezier(.68, -.55, .265, 1.55);
+}
+
+.social-icon:hover .tooltip {
+    top: -70px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.social-icon .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background: #fff;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    transition: all .5s cubic-bezier(.68, -.55, .265, 1.55);
+}
+
+.social-icon:hover span,
+.social-icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, .4);
+}
+
+.social-icon.facebook:hover span,
+.social-icon.facebook:hover .tooltip,
+.social-icon.facebook:hover .tooltip::before {
+    background: var(--facebook-color);
+}
+
+.social-icon.twitter:hover span,
+.social-icon.twitter:hover .tooltip,
+.social-icon.twitter:hover .tooltip::before {
+    background: var(--twitter-color);
+}
+
+.social-icon.instagram:hover span,
+.social-icon.instagram:hover .tooltip,
+.social-icon.instagram:hover .tooltip::before {
+    background: var(--instagram-color);
+}
+
+.social-icon.github:hover span,
+.social-icon.github:hover .tooltip,
+.social-icon.github:hover .tooltip::before {
+    background: var(--github-color);
+}
+
+.social-icon.youtube:hover span,
+.social-icon.youtube:hover .tooltip,
+.social-icon.youtube:hover .tooltip::before {
+    background: var(--youtube-color);
+}
+
+.social-icon.linkedin:hover span,
+.social-icon.linkedin:hover .tooltip,
+.social-icon.linkedin:hover .tooltip::before {
+    background: var(--linkedin-color);
+}
+
+.social-icon.tiktok:hover span,
+.social-icon.tiktok:hover .tooltip,
+.social-icon.tiktok:hover .tooltip::before {
+    background: var(--tiktok-color);
+}
+
+.social-icon.google:hover span,
+.social-icon.google:hover .tooltip,
+.social-icon.google:hover .tooltip::before {
+    background: var(--google-color);
+}
+
+.social-icon.pinterest:hover span,
+.social-icon.pinterest:hover .tooltip,
+.social-icon.pinterest:hover .tooltip::before {
+    background: var(--pinterest-color);
+}
+
+.social-icon.snapchat:hover span,
+.social-icon.snapchat:hover .tooltip,
+.social-icon.snapchat:hover .tooltip::before {
+    background: var(--snapchat-color);
+    color: black;
+}
+
+.social-icon.whatsapp:hover span,
+.social-icon.whatsapp:hover .tooltip,
+.social-icon.whatsapp:hover .tooltip::before {
+    background: var(--whatsapp-color);
+}
+
+.social-icon.tumblr:hover span,
+.social-icon.tumblr:hover .tooltip,
+.social-icon.tumblr:hover .tooltip::before {
+    background: var(--tumblr-color);
+}
+
+.social-icon.reddit:hover span,
+.social-icon.reddit:hover .tooltip,
+.social-icon.reddit:hover .tooltip::before {
+    background: var(--reddit-color);
+}
+
+.social-icon.twitch:hover span,
+.social-icon.twitch:hover .tooltip,
+.social-icon.twitch:hover .tooltip::before {
+    background: var(--twitch-color);
+}
+
+.social-icon.discord:hover span,
+.social-icon.discord:hover .tooltip,
+.social-icon.discord:hover .tooltip::before {
+    background: var(--discord-color);
+}
+
+.social-icon.yelp:hover span,
+.social-icon.yelp:hover .tooltip,
+.social-icon.yelp:hover .tooltip::before {
+    background: var(--yelp-color);
+}
+
+.social-icon.mastodon:hover span,
+.social-icon.mastodon:hover .tooltip,
+.social-icon.mastodon:hover .tooltip::before {
+    background: var(--mastodon-color);
+}
+
+.social-icon.spotify:hover span,
+.social-icon.spotify:hover .tooltip,
+.social-icon.spotify:hover .tooltip::before {
+    background: var(--spotify-color);
+}
+
+.social-icon.apple:hover span,
+.social-icon.apple:hover .tooltip,
+.social-icon.apple:hover .tooltip::before {
+    background: var(--apple-color);
+}
+
+.social-icon.amazon:hover span,
+.social-icon.amazon:hover .tooltip,
+.social-icon.amazon:hover .tooltip::before {
+    background: var(--amazon-color);
+}
+
+.social-icon.microsoft:hover span,
+.social-icon.microsoft:hover .tooltip {
+    /* background-size: 60px 30px, 60x 30px; */
+    background: var(--microsoft-color-origin);
+}
+
+.social-icon.social-icon.microsoft:hover .tooltip::before {
+    background: var(--microsoft-color-before);
+}
+
+.social-icon.periscope:hover span,
+.social-icon.periscope:hover .tooltip,
+.social-icon.periscope:hover .tooltip::before {
+    background: var(--periscope-color);
+}
+
+.social-icon.foursquare:hover span,
+.social-icon.foursquare:hover .tooltip,
+.social-icon.foursquare:hover .tooltip::before {
+    background: var(--foursquare-color);
+}
+
+.social-icon.vimeo:hover span,
+.social-icon.vimeo:hover .tooltip,
+.social-icon.vimeo:hover .tooltip::before {
+    background: var(--vimeo-color);
+}
+
+.social-icon.skype:hover span,
+.social-icon.skype:hover .tooltip,
+.social-icon.skype:hover .tooltip::before {
+    background: var(--skype-color);
+}
+
+.social-icon.android:hover span,
+.social-icon.android:hover .tooltip,
+.social-icon.android:hover .tooltip::before {
+    background: var(--android-color);
+}
+
+.social-icon.steam:hover span,
+.social-icon.steam:hover .tooltip,
+.social-icon.steam:hover .tooltip::before {
+    background: var(--steam-color);
+}
+
+.social-icon.telegram:hover span,
+.social-icon.telegram:hover .tooltip,
+.social-icon.telegram:hover .tooltip::before {
+    background: var(--telegram-color);
+}

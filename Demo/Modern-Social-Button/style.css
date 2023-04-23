@@ -1,0 +1,26 @@
+@import url('/library/Modern-Social-Button/style.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    place-items: center;
+    background: linear-gradient(315deg, #ffffff, #d7e1ec);
+}
+
+.wrapper {
+    display: inline-flex;
+    
+    flex-wrap: wrap;
+    gap: 10px 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}

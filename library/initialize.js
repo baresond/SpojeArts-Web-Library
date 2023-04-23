@@ -1,4 +1,5 @@
 (function() {
+    console.log('Funguje');
     const locationOfLibrary = "https://raw.githubusercontent.com/baresond/SpojeArts-Web-Library/master/";
     
     //Social Buttons - Script

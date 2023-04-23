@@ -1,8 +1,18 @@
 (function() {
-    var socialBT = document.createElement('script');
-    socialBT.type = 'text/javascript';
-    socialBT.src = '/library/Modern-Social-Button/script.js';
-    document.body.append(socialBT);
+    const locationOfLibrary = "https://github.com/baresond/SpojeArts-Web-Library/tree/master/";
+    
+    //Social Buttons - Script
+    var socialBTScript = document.createElement('script');
+    socialBTScript.type = 'text/javascript';
+    socialBTScript.src = locationOfLibrary + '/library/Modern-Social-Button/script.js';
+    document.body.append(socialBTScript);
+
+    //Social Buttons - Script
+    var socialBTCSS = document.createElement("link");
+    socialBTCSS.rel = "stylesheet";
+    socialBTCSS.href = locationOfLibrary + '/library/Modern-Social-Button/style.css';
+    document.head.append(socialBTCSS);
+
 
     var fontawesomeScript = document.createElement('script');
     fontawesomeScript.setAttribute("data-search-pseudo-elements", "");

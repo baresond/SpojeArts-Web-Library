@@ -1,5 +1,5 @@
 (function() {
-    const locationOfLibrary = "https://baresond.github.io/SpojeArts-Web-Library/";
+    const locationOfLibrary = "https://raw.githubusercontent.com/baresond/SpojeArts-Web-Library/master/";
     
     //Social Buttons - Script
     var socialBTScript = document.createElement('script');
